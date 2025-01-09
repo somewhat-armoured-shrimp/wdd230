@@ -1,0 +1,25 @@
+@media screen and (min-width: 650px) {
+    header {
+        color: white;
+        background-color: var(--secondary-colour);
+    }
+
+    #pfp {
+        margin: 1.5rem 3rem 1.5rem 1.5rem;
+        border: 3px solid var(--primary-colour);
+    }
+
+    main {
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem 5rem;
+    }
+
+    main h1 {
+        grid-column: 1 / 3;
+    }
+
+    .card {
+        grid-row: 2 / 3;
+    }
+}
