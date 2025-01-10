@@ -1,6 +1,6 @@
 :root {
     --secondary-colour: #00011d;
-    --primary-colour: #d34d4d;
+    --primary-colour: #f97b7b;
 }
 
 body {
@@ -90,7 +90,7 @@ h2 {
 }
 
 .card a {
-    color: #97082e;
+    color: #a80833;
 }
 
 .card a:hover {
@@ -103,7 +103,7 @@ h2 {
 }
 
 #siteVisits {
-    color: #97082e;
+    color: #a80833;
     font-weight: 600;
 }
 
