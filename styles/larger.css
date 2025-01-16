@@ -2,11 +2,29 @@
     header {
         color: white;
         background-color: var(--secondary-colour);
+        justify-content: center;
     }
 
     #pfp {
         margin: 1.5rem 3rem 1.5rem 1.5rem;
         border: 3px solid var(--primary-colour);
+    }
+
+    #lightButton {
+        right: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: flex;
+        justify-content: space-around;
     }
 
     main {

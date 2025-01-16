@@ -1,6 +1,8 @@
 :root {
-    --secondary-colour: #00011d;
     --primary-colour: #f97b7b;
+    --secondary-colour: #00011d;
+    --background-colour: #00042e;
+
 }
 
 body {
@@ -11,16 +13,26 @@ body {
 
 header {
     display: flex;
+    position: relative;
     font-weight: 400;
-    background-color: var(--primary-colour);
-    color: var(--secondary-colour);
-    justify-content: center;
+    background-color: var(--secondary-colour);
+    color: white;
+}
+
+#lightButton {
+    position: absolute;
+    top: 0.65rem;
+    right: 3.5rem;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #fff;
 }
 
 #pfp {
     border-radius: 50%;
     margin: 1.5rem;
-    border: 3px solid var(--secondary-colour);
+    border: 3px solid var(--primary-colour);
 }
 
 #header-name {
@@ -28,14 +40,38 @@ header {
     align-self: center;
 }
 
+#menu {
+    position: absolute;
+    top: -0.2rem;
+    right: 0.5rem;
+    font-size: 60px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+/* oh wow that lack of space between #menu and .open is imPORTANT */
+#menu.open::before {
+    content: "×";
+    font-weight: 300;
+    position: absolute;
+    right: 0.6rem;
+}
+
 .navigation {
     display: flex;
+    flex-direction: column;
     background-color: var(--secondary-colour);
-
 }
 
 .navigation a {
+    display: none;
     text-align: center;
+    margin-left: -15px;
     color: var(--primary-colour);
     text-decoration: none;
     font-weight: 600;
@@ -51,50 +87,51 @@ header {
     transition: 0.3s;
 }
 
+.navigation.open a {
+    display: block;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #00042e;
+    background-color: var(--background-colour);
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--primary-colour);
+    border: 2px solid rgba(57, 227, 233, 0.5);
     border-radius: 10px;
     margin: 1.5rem;
-    background-color: white;
+    color: white;
+    background-color: #040838;
 }
 
 h1 {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 h1,
 h2 {
     text-align: center;
     margin: 1rem;
-
+    color: white;
 }
 
 .card li {
     list-style: none;
     font-size: 18px;
-    color: var(--secondary-colour);
+    color: white;
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
 
 .card a {
-    color: #a80833;
-}
-
-.card a:hover {
-    color: var(--primary-colour);
+    color: #f97b7b;
 }
 
 .card p {
@@ -103,7 +140,7 @@ h2 {
 }
 
 #siteVisits {
-    color: #a80833;
+    color: #f97b7b;
     font-weight: 600;
 }
 
