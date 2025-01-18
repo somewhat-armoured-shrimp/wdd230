@@ -1,0 +1,214 @@
+:root {
+    --primary: #001c3d;
+    --secondary: #2a5d89;
+    --accent: #bb9bc7;
+
+    --header-font: Tinos;
+    --para-font: Reddit Sans;
+}
+
+body {
+    font-family: var(--para-font);
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    background: var(--primary);
+    font-family: var(--header-font);
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin-left: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    max-width: 300px;
+}
+
+.logo-h1 {
+    display: flex;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 55px;
+    position: absolute;
+    right: 1rem;
+    top: 7.5rem;
+    margin-left: 2rem;
+}
+
+#menu::before {
+    content: '≡';
+}
+
+#menu.open::before {
+    content: '×';
+    position: absolute;
+    font-family: var(--para-font);
+    font-weight: 300;
+    right: 0.5rem;
+    top: -0.2rem;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: var(--primary);
+    top: 149px;
+    width: 100%;
+    right: -2rem;
+}
+
+.navigation {
+    display: flex;
+    font-family: var(--header-font);
+    font-size: larger;
+    margin: 2rem 2rem 0 2rem;
+    align-self: center;
+    display: none;
+
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
+    padding: 25px;
+    width: 100%;
+    border-bottom: 1px solid #bb9bc751;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    background: var(--primary);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    font-family: var(--header-font);
+    font-size: larger;
+}
+
+.callToAction a {
+    background: var(--secondary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-left: 1rem;
+    text-decoration: none;
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--para-font);
+}
+
+.callToAction a:hover {
+    background: var(--accent);
+}
+
+.content {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--primary);
+}
+
+.content h2 {
+    font-family: var(--header-font);
+    margin-left: 1rem;
+    margin-bottom: -0.8rem;
+}
+
+.content h3 {
+    font-weight: 500;
+}
+
+.currentEvents,
+.weather,
+.spotlight {
+    background: #f6f6f6;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.currentEvents div,
+.weather div,
+.spotlight div {
+    border-top: 1px solid #bb9bc74b;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#weather-emoji {
+    font-size: 50px;
+}
+
+.weather {
+    text-align: center;
+    font-size: larger;
+}
+
+.spotlight h3 {
+    margin: 0;
+}
+
+#lastModified {
+    margin: 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomFoot {
+    border-top: 1px solid #bb9bc751;
+    font-family: var(--header-font);
+}
+
+footer {
+    display: grid;
+    color: white;
+    background: var(--primary);
+    margin: 0;
+    padding: 1rem;
+    justify-content: space-around;
+}
