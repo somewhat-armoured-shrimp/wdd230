@@ -97,19 +97,44 @@ main {
     background-color: var(--background-colour);
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.hero-caption {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    padding: 1rem;
+    background: #00042eef;
+    color: white;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: 400;
+    border: 1px solid var(--primary-colour);
+}
+
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgba(57, 227, 233, 0.5);
+    border: 1px solid rgba(57, 227, 233, 0.5);
     border-radius: 10px;
     margin: 1.5rem;
     color: white;
     background-color: #040838;
 }
 
-h1 {
-    color: black;
+main h1 {
+    color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -142,6 +167,33 @@ h2 {
 #siteVisits {
     color: #f97b7b;
     font-weight: 600;
+}
+
+/* OK OK SO i went to w3schools for help, iframe be crazy ok BUT i 
+think i understand what it's doing and why. 
+    still hates margins, though. :( */
+.iframe-container { /* container uses relative positioning as the parent,
+    prep for the absolute child to be overlaid on top of it */
+    position: relative;
+    width: 100%;
+    /* i don't know why padding-top and padding-bottom are good, 
+    but padding-left and right yoink the iframe off my page. regular
+    padding is ugly and does not work properly. */
+    padding-top: 56.25%; /* use percentages so it's not a fixed height.
+    this is where the aspect ratio magic happens. 100% is 1:1 */
+    background: rgba(57, 227, 233, 0.5); /* just a visual indicator for the container */
+    margin: 2rem 0 2rem 0;
+}
+
+.iframe {
+    position: absolute;
+    /* if I use padding-top in the container, then I need this.
+    but if i use padding-bottom i don't. makes just enough sense 
+    for me not to think about it. */
+    top: 0;
+    width: 100%; /* 100% on both makes sure that the absolute child 
+    overlays its relative parent COMPLETELY */
+    height: 100%;
 }
 
 footer {

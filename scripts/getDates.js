@@ -11,6 +11,21 @@ cheeseBurger.addEventListener('click', () => {
     navigation.classList.toggle('open');
 });
 
+// le queryselector
+const siteVisits = document.querySelector('#siteVisits');
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    siteVisits.textContent = numVisits;
+} else {
+    siteVisits.textContent = `💀 0`;
+}
+// go up by ONE
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
 // ;;;; uhhhh im just assuming this is what i do
 // i mean i can't do hover-ness which makes me sad dsodn sifnisnfids nf
 // but like,,,, i don't know how far i was supposed to go with this
