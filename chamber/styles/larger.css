@@ -38,13 +38,14 @@
         border-bottom: 2px solid var(--accent);
     }
 
-    main {
+    main.home {
         display: grid;
         grid-template-columns: 1fr 9fr 1fr;
         background: white;
+
     }
 
-    .hero {
+    .home .hero {
         display: flex;
         margin-top: 50px;
         grid-column: 2 / 3;
@@ -95,6 +96,70 @@
         grid-column: 1 / 3;
 
     }
+
+    /*/////////////////////////////////////////////////////////////////
+
+    DISCOVER 
+    at some point i just started phoning it in okay
+
+    /////////////////////////////////////////////////////////////////*/
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     
+    }
+
+    .sidebar {
+        order: 1;
+    }
     
+    .info {
+        margin: 2rem 1rem;
+        grid-row: 1 / 1;
+        grid-column: 1 / 2;
+    
+    }
+
+    .figures {
+        grid-column: 2 / 3;
+        order: 2;
+    }
+
+    .figure {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        
+    }
+
+    .figure img {
+        width: 60%;
+        /* margin-right: 3rem; */
+        border-radius: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: 0.3s;
+    }
+
+    .figure img:hover {
+        transition: 0.1s;
+        box-shadow: 10px 10px 0 var(--accent);
+    }
+
+    .img-caption {
+        min-width: 200px;
+        /* max-width: 300px; */
+        width: 70%;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+
+    
+
+    
+
+
 }

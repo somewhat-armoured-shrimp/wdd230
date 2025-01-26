@@ -1,7 +1,10 @@
 :root {
-    --primary: #001c3d;
+    --primary: #003d39;
+    --secondary: #217d75;
+    --accent: #c79bbc;
+    /* --primary: #001c3d;
     --secondary: #2a5d89;
-    --accent: #bb9bc7;
+    --accent: #bb9bc7; */
 
     --header-font: Tinos;
     --para-font: Reddit Sans;
@@ -11,7 +14,6 @@ body {
     font-family: var(--para-font);
     margin: 0;
 }
-
 
 header {
     display: flex;
@@ -92,14 +94,14 @@ h1 {
     font-weight: 500;
     padding: 25px;
     width: 100%;
-    border-bottom: 1px solid #bb9bc751;
+    border-bottom: 1px solid #c79bbc60;
 }
 
 .navigation a:hover {
     text-decoration: underline;
 }
 
-main {
+main.home {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.4rem;
@@ -200,7 +202,7 @@ footer div {
 }
 
 .bottomFoot {
-    border-top: 1px solid #bb9bc751;
+    border-top: 1px solid #c79bbc60;
     font-family: var(--header-font);
 }
 
@@ -211,4 +213,63 @@ footer {
     margin: 0;
     padding: 1rem;
     justify-content: space-around;
+}
+
+
+/*/////////////////////////////////////////////////////////////////
+
+DISCOVER 
+
+/////////////////////////////////////////////////////////////////*/
+
+.discover {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    
+}
+
+.sidebar {
+    order: 2;
+}
+
+.info {
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    height: auto;
+    background: #f6f6f6;
+    border-radius: 5px;
+    color: var(--primary);
+    
+}
+
+
+.figure {
+    margin: 2rem;
+}
+
+/* THE LITTLE WHITE STUPID AREA UNDER MY IMG WAS BECAUSE IT
+WAS INLINE AAAAAA THANK YOU STACK OVERFLOW GUY */
+.figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-caption {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.img-caption p {
+    justify-content: center;
+    align-items: center;
 }
