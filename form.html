@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Toronto - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Sarah Toronto's course assignment portal">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getDates.js"></script>
+    
+    <meta property="og:title" content="Sarah Toronto - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/IMG_1246.JPG?itok=dd_KkW4F">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd230/index.html">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+
+        <img id="pfp" src="images/ahh-profile.webp" alt="me but a picture" width="100" height="100">
+        <span id="header-name">Sarah Toronto</span>
+        <button type="button" id="menu"></button>
+    </header>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html">Form</a>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <fieldset>
+                <label>Username<span class="asterisk">*</span><input type="text" id="username" name="username" required></label>
+                <label>Password<span class="asterisk">*</span><input type="password" pattern="[a-zA-Z0-9]{8,}" id="password" name="password"
+                        required></label>
+                <label>Confirm Password<span class="asterisk">*</span><input type="password" pattern="[a-zA-Z0-9]{8,}" id="passwordAgain"
+                        name="passwordAgain" required></label>
+                <div id="feedback"></div>
+                <label>E-mail<span class="asterisk">*</span><input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+                <label>Rate me outta ten I PROMISE my feelings won't be hurt<input type="range" id="rating" name="rating" min="0" max="10" step="1" list="ticks"></label>
+                <!-- seem i gotta make sure the id matches the list="" in the range input -->
+                <datalist id="ticks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+                <label><input type="submit"></label>
+            </fieldset>
+
+            
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> 🦐 Sarah Toronto 🦐 Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

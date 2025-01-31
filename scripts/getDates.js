@@ -10,7 +10,7 @@ cheeseBurger.addEventListener('click', () => {
     cheeseBurger.classList.toggle('open');
     navigation.classList.toggle('open');
 });
-
+    
 // le queryselector
 const siteVisits = document.querySelector('#siteVisits');
 
