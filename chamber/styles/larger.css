@@ -107,18 +107,18 @@
     .discover {
         display: grid;
         grid-template-columns: 1fr 2fr;
-    
+
     }
 
     .sidebar {
         order: 1;
     }
-    
+
     .info {
         margin: 2rem 1rem;
         grid-row: 1 / 1;
         grid-column: 1 / 2;
-    
+
     }
 
     .figures {
@@ -130,7 +130,7 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        
+
     }
 
     .figure img {
@@ -156,10 +156,20 @@
         border-bottom-left-radius: 15px;
     }
 
+    /*/////////////////////////////////////////////////////////////////
 
-    
+    JOIN 
 
-    
+    /////////////////////////////////////////////////////////////////*/
+
+    main.join {
+        display: grid;
+        grid-template-columns: 1fr 5fr 4fr 1fr;
+    } 
+
+    .formbox {
+        grid-column: 2 / 3;
+    }
 
 
 }

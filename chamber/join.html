@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Spokane Chamber of Commerce</title>
+    <meta name="description" content="CONTENTCONTENT">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/chamber.js"></script>
+    <script defer src="scripts/join.js"></script>
+    <meta property="og:title" content="Spokane Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.visitspokane.com/imager/files_idss_com/C390/0e137657-c05f-4665-b9a7-734e45de3719_e45adf5f6bc0c5c2a30a39868f44eab6.png">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd230/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon(1).ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo-h1">
+            <img src="https://img.itch.zone/aW1nLzE0MDg0Mzg3LmdpZg==/original/7j%2BIm7.gif"
+                alt="cat picture placeholder logo" width="100">
+            <h1>Spokane Chamber of Commerce</h1>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main class="join">
+        <div class="formbox">
+            <h2>Join us!</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label>First Name *<input type="text" id="firstname" name="firstname" required></label>
+                    <label>Last Name *<input type="text" id="lastname" name="lastname" required></label>
+                    <label>Title or position within your organization:<input type="text" id="title" name="title"
+                            pattern="[a-zA-z\s\-]{7,}" title="Use at least 7 characters. Hyphens and spaces allowed"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label>E-mail *<input type="email" id="email" name="email" placeholder="placeholder@gmail.com"
+                            required></label>
+                    <label>Phone Number *<input type="telephone" id="phone" name="phone" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Info</legend>
+                    <label>Business/Organization Name *<input type="text" id="business" name="business"
+                            required></label>
+                    <p>Choose a Membership Level *</p>
+                    <div class="radiobox">
+                        <label>💟 Nonprofit Membership (No fees)</label>
+                        <input type="radio" name="member-level" value="np-membership" required>
+                    </div>
+                    <div class="radiobox">
+                        <label>🥉 Bronze Membership ($50000.00 monthly fee)</label>
+                        <input type="radio" name="member-level" value="bronze-membership">
+                    </div>
+                    <div class="radiobox">
+                        <label>🥈 Silver Membership ($100000.00 monthly fee)</label>
+                        <input type="radio" name="member-level" value="silver-membership">
+                    </div>
+                    <div class="radiobox">
+                        <label>🥇 Gold Membership ($100000.99 monthly fee)</label>
+                        <input type="radio" name="member-level" value="gold-membership">
+                    </div>
+                    
+                    <label>Describe your business/organization:<textarea name="org-desc" id="org-desc"
+                            rows="5"></textarea></label>
+                    <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                    <input type="submit" value="Join">
+                </fieldset>
+            </form>
+        </div>
+        <section>
+            <h2>Membership Perks</h2>
+            <div class="perks">
+                <h3>Nonprofit</h3>
+                <p class="perk-emojis">💟</p>
+                <p>Feels good to do good. No fees. You get a discount on events (like probably for free or something) and training.</p>
+            </div>
+            <div class="perks">
+                <h3>Bronze</h3>
+                <p class="perk-emojis">🥉</p>
+                <p>Feels less good because you pay some money. But you also get training for soft skills.</p>
+            </div>
+            <div class="perks">
+                <h3>Silver</h3>
+                <p class="perk-emojis">🥈</p>
+                <p>Feels the worst. You do get training and a small discount on events, though.</p>
+            </div>
+            <div class="perks">
+                <h3>Gold</h3>
+                <p class="perk-emojis">🥇</p>
+                <p>Feels OK overall. You pay a lot but get advertising on the site, training, and a large discount on events.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>call 123-456-7890 or something</p>
+        </div>
+        <div class="bottomFoot">
+            <p>Sarah Toronto - WDD 230 Class Project - Last modified - <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
