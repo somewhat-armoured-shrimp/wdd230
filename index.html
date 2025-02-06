@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/links.js"></script>
     <meta property="og:title" content="Sarah Toronto - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -51,50 +52,13 @@
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card" id="bigCard">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>
-                    Week 01:
-                    <a href="week01/holygrail.html" class="aLink">Holy Grail Layout</a> |
-                    <a href="week01/media-query.html" class="aLink">Media Query</a> |
-                    <a href="https://codepen.io/somewhat-armoured-shrimp/pen/mybpqOB" class="aLink">JS Pen</a>
-                </li>
-                <li>
-                    Week 02:
-                    <a href="week02/design.html" class="aLink">Design</a> |
-                    <a href="https://codepen.io/somewhat-armoured-shrimp/pen/emOrxoe" class="aLink">Hamburger Pen</a> |
-                    <a href="week02/bom.html" class="aLink">Favourite BOM(b)</a>
-                </li>
-                <li>
-                    Week 03:
-                    <a href="week03/images/landscape.webp" class="aLink">Landscape WebP</a> |
-                    <a href="week03/lazyload.html" class="aLink">Lazy Loading</a> |
-                    <a href="week03/responsive-images.html" class="aLink">Responsive Images</a> |
-                    <a href="week03/bom.html" class="aLink">Favourite BOM(b) but cooler</a>
-                </li>
-                <li>
-                    Week 04:
-                    <a href="https://codepen.io/somewhat-armoured-shrimp/pen/OPLroEL" class="aLink">Pseudo Classes</a> |
-                    <a href="images/there-was-only-one.jpg" class="aLink">Combinators Exercise Proof</a> |
-                    <a href="week04/tablebuild.html" class="aLink">Table Build</a> |
-                    <a href="form-start/form-start(1)/Form-start/index.html" class="aLink">My files are tragic (Form)</a>
-                </li>
-                <li>
-                    Week 05:
-                    <a href="https://codepen.io/somewhat-armoured-shrimp/pen/mybYrzX" class="aLink">Pseudo Elements</a> |
-                    <a href="week05/new-ward-members.json" class="aLink">Working with JSON</a> |
-                    <a href="week05/prophets.html" class="aLink">Latter-day Prophets</a> |
-                    <a href="week05/weather.html" class="aLink">Weather API</a>
-                </li>
-                <li>
-                    Week 06:
-                </li>
-            </ul>
-
+            <ul id="ul"></ul>
         </section>
         <section class="card" id="weather">
-            <h2>Information</h2>
-            <p>Seattle, Washington</p>
-            <p>🌤️ 10°C</p>
+            <h2>Crucial Information</h2>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temp"></p>
             <p><span id="siteVisits"></span> visits to the page</p>
         </section>
         <div class="iframe-container">
