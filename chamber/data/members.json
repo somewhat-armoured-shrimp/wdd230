@@ -5,7 +5,7 @@
             "address": "8888 S Kitty Avenue Spokane WA 98888",
             "phone": "(509) 888-8888",
             "siteURL": "https://dankycattossing.org",
-            "logo": "images/dankylogo.png",
+            "icon": "images/dankylogo.png",
             "membershipLevel": "Nonprofit"
         },
         {
@@ -13,7 +13,7 @@
             "address": "420 N Otfunny Street Spokane WA 96969",
             "phone": "(509) 420-6969",
             "siteURL": "https://thegamergate.com",
-            "logo": "images/gamergatelogo.png",
+            "icon": "images/gamergatelogo.png",
             "membershipLevel": "Gold"
         },
         {
@@ -21,7 +21,7 @@
             "address": "7482 Picklebrickle Rd Spokane WA 90000",
             "phone": "(509) 100-1000",
             "siteURL": "https://brickbricks.com",
-            "logo": "images/brickslogo.png",
+            "icon": "images/brickslogo.png",
             "membershipLevel": "Bronze"
         },
         {
@@ -29,7 +29,7 @@
             "address": "7777 Main St Spokane WA 97777",
             "phone": "(509) 777-7777",
             "siteURL": "https://www.happyhoureveryhour.org",
-            "logo": "images/happylogo.png",
+            "icon": "images/happylogo.png",
             "membershipLevel": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "6251 E Avenue Avenue Spokane WA 92222",
             "phone": "(509) 222-2222",
             "siteURL": "https://traitorjosephs.com",
-            "logo": "images/traitorjoeslogo.png",
+            "icon": "images/traitorjoeslogo.png",
             "membershipLevel": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "123 Beef Street Spokane WA 99999",
             "phone": "(509) 999-9999",
             "siteURL": "https://bannibalbeef.com",
-            "logo": "images/bannibalbeeflogo.png",
+            "icon": "images/bannibalbeeflogo.png",
             "membershipLevel": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address": "1111 S Tupid Rd Spokane WA 91111",
             "phone": "(509) 111-1111",
             "siteURL": "https://familyguyhelp.gov",
-            "logo": "images/householdmanlogo.png",
+            "icon": "images/householdmanlogo.png",
             "membershipLevel": "Silver"
         }
     ]
