@@ -1,7 +1,7 @@
-// idk what this is or why this is
-// const baseURL = 'https://somewhat-armoured-shrimp.github.io/wdd230/';
 const membersURL = 'https://somewhat-armoured-shrimp.github.io/wdd230/chamber/data/members.json';
 const cardsGrid = document.querySelector('.cards-grid');
+
+
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -27,6 +27,8 @@ const displayMemberCards = (companies) => {
         phone.textContent = `${company.phone}`;
         siteLink.textContent = `${company.siteURL}`;
 
+        card.classList.add('member-card');
+
         companyLogo.setAttribute('src', `${company.icon}`);
         companyLogo.setAttribute('alt', `${company.companyName} Logo`);
         companyLogo.setAttribute('width', '240');
@@ -43,5 +45,19 @@ const displayMemberCards = (companies) => {
         cardsGrid.appendChild(card);
     });
 }
+
+const gridbutton = document.querySelector('#grid');
+const listbutton = document.querySelector('#list');
+const display = document.querySelector('article');
+
+gridbutton.addEventListener('click', () => {
+    display.classList.add('grid');
+    display.classList.remove('list');
+});
+
+listbutton.addEventListener('click', () => {
+    display.classList.add('list');
+    display.classList.remove('grid');
+})
 
 getMembers();

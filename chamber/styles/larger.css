@@ -165,11 +165,38 @@
     main.join {
         display: grid;
         grid-template-columns: 1fr 5fr 4fr 1fr;
-    } 
+    }
 
     .formbox {
         grid-column: 2 / 3;
     }
 
+    /*/////////////////////////////////////////////////////////////////
+
+    DIRECTORY 
+
+    /////////////////////////////////////////////////////////////////*/
+
+    .list .member-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1px;
+
+    }
+
+    .list .member-card h2,
+    .list .member-card h2~p,
+    .list .member-card a {
+        grid-row: 1 / 3;
+        padding-bottom: 0;
+
+    }
+
+    .list .member-card a {
+        grid-column: 5 / 6;
+        grid-row: 1 / 3;
+        border: none;
+        padding-bottom: 1rem;
+    }
 
 }

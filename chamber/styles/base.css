@@ -378,3 +378,129 @@ section h2 {
 .perk-emojis {
     font-size: 40px;
 }
+
+/*/////////////////////////////////////////////////////////////////
+
+DIRECTORY 
+
+/////////////////////////////////////////////////////////////////*/
+
+main.directory {
+    color: var(--primary);
+}
+
+.layout-options {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: -2rem;
+}
+
+.layout-options button {
+    padding: 1rem; 
+    width: 30%;
+    border: none;
+    color: var(--primary);
+    background: var(--box-color);
+}
+
+#grid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#list {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.layout-options button:hover {
+    background: #e1e1e1;
+}
+
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+}
+
+.list .member-card:nth-child(even) {
+    background: var(--box-border-color);
+}
+
+.list .member-card:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list .member-card:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.list .member-card h2 {
+    font-size: 18px;
+}
+
+.list .member-card h2~p,
+.list .member-card a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 1rem;
+    
+}
+
+.list .member-card a {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3 ;
+    padding-top: 1rem;
+    border-top: 1px solid var(--box-border-color);
+}
+
+.list img {
+    display: none;
+}
+
+.member-card {
+    text-align: center;
+    background: var(--box-color);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.member-card h2 {
+    margin-top: 1rem;
+    font-size: xx-large;
+}
+
+.member-card img {
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #003d390f;
+    margin-bottom: 2.5rem;
+}
+
+.member-card a {
+    color: var(--secondary);
+}
+
+.member-card a:hover {
+    color: var(--accent);
+}
