@@ -562,7 +562,7 @@ main.directory {
 }
 
 .member-card a {
-    color: #05534c;
+    color: var(--secondary);
 }
 
 .member-card a:hover {
