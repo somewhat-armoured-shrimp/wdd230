@@ -174,15 +174,14 @@ main.home {
 }
 
 .currentEvents div,
-.weather div,
-.spotlight div {
+.weather div {
     border-top: 1px solid #bb9bc74b;
     padding: 1rem;
     margin: 1rem;
 }
 
 #weather-emoji {
-    font-size: 50px;
+    width: 70px;
 }
 
 .weather {
@@ -190,8 +189,75 @@ main.home {
     font-size: larger;
 }
 
+#forecast {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    background: var(--box-color);
+    border-radius: 5px;
+}
+
+#forecast h2 {
+    font-size: 24px;
+    
+}
+
+#forecast div {
+    border: none;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid var(--box-border-color);
+}
+
+#forecast div:last-child {
+    border: none;
+}
+
+#max {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #217d751e;
+    background: #fafefc;
+    /* background: #ffb7fd2d; */
+
+}
+
+.spotlight h2 {
+    border-bottom: 1px solid #217d751e;
+    padding-bottom: 0.5rem;
+}
+
+.spotlight div {
+    padding: 2rem;
+    
+}
+
 .spotlight h3 {
-    margin: 0;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    
+}
+
+.spotlight img {
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #bb9bc74b;
+    
+
+}
+
+.spotlight a {
+    color: #05534c;
+}
+
+.spotlight a:hover {
+    color: var(--accent);
 }
 
 #lastModified {
@@ -418,8 +484,6 @@ main.directory {
     background: #e1e1e1;
 }
 
-
-
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -498,7 +562,7 @@ main.directory {
 }
 
 .member-card a {
-    color: var(--secondary);
+    color: #05534c;
 }
 
 .member-card a:hover {
