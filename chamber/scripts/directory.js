@@ -1,7 +1,16 @@
+// idk why the menu hates me so bad on this page
+document.querySelector("#lastModified").textContent = document.lastModified;
+
+const hamburgr = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamburgr.addEventListener('click', () => {
+    hamburgr.classList.toggle('open');
+    navigation.classList.toggle('open');
+});
+
 const membersURL = 'https://somewhat-armoured-shrimp.github.io/wdd230/chamber/data/members.json';
 const cardsGrid = document.querySelector('.cards-grid');
-
-
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -58,6 +67,6 @@ gridbutton.addEventListener('click', () => {
 listbutton.addEventListener('click', () => {
     display.classList.add('list');
     display.classList.remove('grid');
-})
+});
 
 getMembers();

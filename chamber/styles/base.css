@@ -54,6 +54,7 @@ h1 {
     right: 1rem;
     top: 7.5rem;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 #menu::before {
@@ -77,6 +78,7 @@ h1 {
     top: 149px;
     width: 100%;
     right: -2rem;
+    z-index: 1;
 }
 
 .navigation {
@@ -96,8 +98,12 @@ h1 {
     align-self: center;
     font-weight: 500;
     padding: 25px;
-    width: 100%;
+    width: 90%;
     border-bottom: 1px solid #c79bbc60;
+}
+
+.navigation a:last-child {
+    border-bottom: none;
 }
 
 .navigation a:hover {
@@ -107,8 +113,41 @@ h1 {
 main.home {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.4rem;
     background: var(--primary);
+}
+
+#banner {
+    position: relative;
+    background: #f6f6f6;
+    color: var(--primary);
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+    padding: 1rem;
+}
+
+#banner p {
+    margin: 0 2rem;
+}
+
+#banner-x {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 30px;
+    color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+}
+
+#banner-x::before {
+    content: '×';   
+}
+
+#banner.closed {
+    display: none;
 }
 
 .hero img {
@@ -233,8 +272,12 @@ main.home {
 }
 
 .spotlight div {
-    padding: 2rem;
-    
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.spotlight div:first-of-type {
+    border-bottom: 1px solid #217d751e;
 }
 
 .spotlight h3 {
@@ -247,13 +290,12 @@ main.home {
 .spotlight img {
     align-items: center;
     border-radius: 5px;
-    box-shadow: 10px 10px 10px #bb9bc74b;
+    box-shadow: 10px 10px 10px #217d750e;
     
-
 }
 
 .spotlight a {
-    color: #05534c;
+    color: var(--secondary);
 }
 
 .spotlight a:hover {
@@ -410,6 +452,7 @@ input[type='submit'] {
     background: var(--secondary);
     color: white;
     padding: 1.5rem;
+    cursor: pointer;
 
 }
 
