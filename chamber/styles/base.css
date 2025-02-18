@@ -109,6 +109,11 @@ h1 {
 .navigation a:hover {
     text-decoration: underline;
 }
+/* ehhhhh */
+a.active::before {
+    content: '»';
+    padding-right: 5px;
+}
 
 main.home {
     display: grid;
